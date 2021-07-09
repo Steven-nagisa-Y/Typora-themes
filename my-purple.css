@@ -36,7 +36,7 @@
 /* 打印 */
 @media print {
   html {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   table,
@@ -47,11 +47,14 @@
   pre {
     word-wrap: break-word;
   }
+
   #write {
     max-width: 100%;
   }
+
   @page {
-    size: A4; /* PDF output size */
+    /* PDF output size */
+    size: A4;
     margin-left: 0;
     margin-right: 0;
   }
@@ -87,11 +90,11 @@ body {
   word-spacing: 0.05rem;
 }
 
-body > *:first-child {
+body>*:first-child {
   margin-top: 0 !important;
 }
 
-body > *:last-child {
+body>*:last-child {
   margin-bottom: 0 !important;
 }
 
@@ -99,14 +102,17 @@ a {
   color: var(--link-color);
   text-decoration: none;
 }
+
 #write a {
   border-bottom: none;
 }
+
 #write a:hover {
   border-bottom: 1px solid var(--link-color);
   color: var(--link-color);
   text-decoration: none;
 }
+
 .md-content {
   color: var(--light-text-color);
 }
@@ -132,6 +138,7 @@ h1 {
   font-size: 2.25em;
   margin-bottom: 2rem;
 }
+
 h1:after {
   content: "";
   display: block;
@@ -147,15 +154,19 @@ h2 {
   border-left: 0.4em solid var(--title-color);
   border-bottom: 1px solid var(--title-color);
 }
+
 h3 {
   font-size: 1.5em;
 }
+
 h4 {
   font-size: 1.3em;
 }
+
 h5 {
   font-size: 1.2em;
 }
+
 h6 {
   font-size: 1.1em;
 }
@@ -176,8 +187,8 @@ hr {
 }
 
 /* 列表 */
-li > ol,
-li > ul {
+li>ol,
+li>ul {
   margin: 0 0;
 }
 
@@ -217,6 +228,7 @@ blockquote {
 table {
   margin-bottom: 1.25rem;
 }
+
 table th,
 table td {
   padding: 8px;
@@ -224,12 +236,15 @@ table td {
   vertical-align: middle;
   border: 1px solid #ddd;
 }
+
 table th {
   font-weight: bold;
 }
+
 table thead th {
   vertical-align: middle;
 }
+
 table tr:nth-child(2n),
 thead {
   background-color: #fcfcfc;
@@ -271,7 +286,7 @@ tt {
   padding: 1px 2px;
 }
 
-.md-task-list-item > input {
+.md-task-list-item>input {
   margin-left: -1.3em;
 }
 
@@ -286,18 +301,19 @@ tt {
   margin-top: 0 !important;
 }
 
-.mathjax-block > .code-tooltip {
+.mathjax-block>.code-tooltip {
   bottom: 0.375rem;
 }
 
 /* 图片 */
-.md-image > .md-meta {
+.md-image>.md-meta {
   border-radius: 3px;
   font-family: var(--monospace);
   padding: 2px 0 0 4px;
   font-size: 0.9em;
   color: inherit;
 }
+
 /* 图片靠左显示 */
 /* p .md-image:only-child {
   width: auto;
@@ -343,6 +359,7 @@ footer {
   border-radius: 5px;
   background: #fdfdfd !important;
 }
+
 /* 代码框阴影 */
 #write pre.md-fences {
   display: block;
@@ -382,6 +399,7 @@ footer {
 .cm-s-inner span.cm-comment {
   color: #9daab6;
 }
+
 .cm-s-inner span.cm-builtin {
   color: #0451a5;
 }
@@ -401,7 +419,7 @@ footer {
 }
 
 /* task list */
-#write .md-task-list-item > input {
+#write .md-task-list-item>input {
   -webkit-appearance: initial;
   display: block;
   position: absolute;
@@ -413,16 +431,16 @@ footer {
   transition: background 0.3s;
 }
 
-#write .md-task-list-item > input:focus {
+#write .md-task-list-item>input:focus {
   outline: none;
   box-shadow: none;
 }
 
-#write .md-task-list-item > input:hover {
+#write .md-task-list-item>input:hover {
   background: #ddd;
 }
 
-#write .md-task-list-item > input[checked]::before {
+#write .md-task-list-item>input[checked]::before {
   content: "";
   position: absolute;
   top: 20%;
@@ -433,7 +451,7 @@ footer {
   background: #333;
 }
 
-#write .md-task-list-item > input[checked]::after {
+#write .md-task-list-item>input[checked]::after {
   content: "";
   position: absolute;
   top: 46%;
@@ -444,20 +462,20 @@ footer {
   background: #333;
 }
 
-#write .md-task-list-item > p {
+#write .md-task-list-item>p {
   transition: color 0.3s, opacity 0.3s;
 }
 
-#write .md-task-list-item.task-list-done > p {
+#write .md-task-list-item.task-list-done>p {
   color: #b4b4b4;
   text-decoration: line-through;
 }
 
-#write .md-task-list-item.task-list-done > p > .md-emoji {
+#write .md-task-list-item.task-list-done>p>.md-emoji {
   opacity: 0.5;
 }
 
-#write .md-task-list-item.task-list-done > p > .md-link > a {
+#write .md-task-list-item.task-list-done>p>.md-link>a {
   opacity: 0.6;
 }
 
@@ -466,6 +484,7 @@ footer {
 .typora-node #typora-sidebar {
   box-shadow: 3px 0px 10px var(--shadow-color);
 }
+
 .sidebar-content-content {
   font-size: 0.9rem;
 }

@@ -7,7 +7,7 @@
     /* the Inter fontface family provides rich opentype features. see https://rsms.me/inter/  */
     --general-font-feature-settings: "calt", "ccmp", "kern", "salt" 0;
     --cjk-font: "Source Han Sans SC", "思源黑体 CN", "思源黑体";
-    --mono-font: "JetBrains Mono";
+    --mono-font: "Fira Code", "JetBrains Mono";
     --fallback-font: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -369,9 +369,9 @@ table tr {
     padding: 0;
 }
 
-table tr:nth-child(2n), thead {
+/* table tr:nth-child(2n), thead {
     background-color: #f8f8f8;
-}
+} */
 
 table th {
     font-weight: bold;
@@ -974,13 +974,13 @@ tbody>tr:last-child>td:first-child {
     border-bottom-left-radius: 4px;
 }
 
-table tr:nth-child(2n), table thead>tr {
+/* table tr:nth-child(2n), table thead>tr {
     background-color: var(--elevated-background);
-}
+} */
 
-table tbody tr:nth-child(2n+1) {
+/* table tbody tr:nth-child(2n+1) {
     background-color: var(--bg-color);
-}
+} */
 
 thead:last-child>tr:last-child>th:first-child {
     border-bottom-left-radius: 4px;
