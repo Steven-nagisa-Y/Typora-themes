@@ -173,6 +173,11 @@ tt {
     text-shadow: none;
 }
 
+.md-toc {
+    /* 目录的行高 */
+    line-height: 1.2rem;
+}
+
 a.md-toc-inner {
     color: var(--text-color);
 }
