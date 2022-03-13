@@ -249,9 +249,13 @@ blockquote {
   color: var(--base02);
 }
 
-/* h4, h5, h6 {
-  display:  none;
-} */
+h4,
+h5,
+h6 {
+  /* display:  none; */
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
 h4 + blockquote {
   background-color: var(--bred);
