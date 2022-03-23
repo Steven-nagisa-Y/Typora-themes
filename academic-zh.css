@@ -273,6 +273,11 @@ pre.md-meta-block {
   color: inherit;
 }
 
+li ul,
+ol li {
+  line-height: 1.2rem;
+}
+
 .md-task-list-item > input {
   top: auto;
   margin-left: -1.1em;
@@ -309,17 +314,15 @@ blockquote {
   position: relative;
   color: #383838;
   border-left: 2px solid black;
-  background-color: rgba(233, 233, 233, 0.2);
+  background-color: rgba(233, 233, 233, 0.4);
 }
 
-#write > blockquote {
-  padding: 0.25em 30px;
-  margin-left: -32px;
-  width: calc(100% + 32px);
-}
+/* #write > blockquote {
+  background-color: transparent;
+} */
 
 #write > .md-fences-with-lineno {
-  margin-left: -33px;
+  margin-left: -32px;
   color: black;
 }
 /*
