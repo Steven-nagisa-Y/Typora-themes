@@ -90,11 +90,11 @@ body {
   word-spacing: 0.05rem;
 }
 
-body>*:first-child {
+body > *:first-child {
   margin-top: 0 !important;
 }
 
-body>*:last-child {
+body > *:last-child {
   margin-bottom: 0 !important;
 }
 
@@ -187,8 +187,8 @@ hr {
 }
 
 /* 列表 */
-li>ol,
-li>ul {
+li > ol,
+li > ul {
   margin: 0 0;
 }
 
@@ -286,7 +286,7 @@ tt {
   padding: 1px 2px;
 }
 
-.md-task-list-item>input {
+.md-task-list-item > input {
   margin-left: -1.3em;
 }
 
@@ -301,12 +301,12 @@ tt {
   margin-top: 0 !important;
 }
 
-.mathjax-block>.code-tooltip {
+.mathjax-block > .code-tooltip {
   bottom: 0.375rem;
 }
 
 /* 图片 */
-.md-image>.md-meta {
+.md-image > .md-meta {
   border-radius: 3px;
   font-family: var(--monospace);
   padding: 2px 0 0 4px;
@@ -419,7 +419,7 @@ footer {
 }
 
 /* task list */
-#write .md-task-list-item>input {
+#write .md-task-list-item > input {
   -webkit-appearance: initial;
   display: block;
   position: absolute;
@@ -431,16 +431,16 @@ footer {
   transition: background 0.3s;
 }
 
-#write .md-task-list-item>input:focus {
+#write .md-task-list-item > input:focus {
   outline: none;
   box-shadow: none;
 }
 
-#write .md-task-list-item>input:hover {
+#write .md-task-list-item > input:hover {
   background: #ddd;
 }
 
-#write .md-task-list-item>input[checked]::before {
+#write .md-task-list-item > input[checked]::before {
   content: "";
   position: absolute;
   top: 20%;
@@ -451,7 +451,7 @@ footer {
   background: #333;
 }
 
-#write .md-task-list-item>input[checked]::after {
+#write .md-task-list-item > input[checked]::after {
   content: "";
   position: absolute;
   top: 46%;
@@ -462,20 +462,20 @@ footer {
   background: #333;
 }
 
-#write .md-task-list-item>p {
+#write .md-task-list-item > p {
   transition: color 0.3s, opacity 0.3s;
 }
 
-#write .md-task-list-item.task-list-done>p {
+#write .md-task-list-item.task-list-done > p {
   color: #b4b4b4;
   text-decoration: line-through;
 }
 
-#write .md-task-list-item.task-list-done>p>.md-emoji {
+#write .md-task-list-item.task-list-done > p > .md-emoji {
   opacity: 0.5;
 }
 
-#write .md-task-list-item.task-list-done>p>.md-link>a {
+#write .md-task-list-item.task-list-done > p > .md-link > a {
   opacity: 0.6;
 }
 

@@ -3,7 +3,7 @@
   --primary-colour: #306797; /* <> */
   --background-color: white;
   --border-color: #dbdbdb;
-  --code-bg-color: #f8f8f8; 
+  --code-bg-color: #f8f8f8;
   --font-color: #1f1f1f;
   --codemirror-color: var(--font-color);
   --header-color: #000000;
@@ -11,7 +11,8 @@
   --control-text-color: #667176;
   --side-bar-bg-color: #fafafa;
   --hr-color: var(--primary-colour);
-  --body-font: "Nunito", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --body-font: "Nunito", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   --heading-font: "Roboto Slab", serif;
   --border-radius: 2px;
   --document-horizontal-margin: 80px;
@@ -27,7 +28,8 @@
   --main-content-margin: 0 auto;
   --main-content-max-width: 100ch;
   --monospace-font-size: 15px;
-  --monospace-font: "FiraCode", "Inconsolata", "Consolas", "Menlo", "Liberation Mono", Courier, monospace;
+  --monospace-font: "FiraCode", "Inconsolata", "Consolas", "Menlo",
+    "Liberation Mono", Courier, monospace;
   --monospace-line-height: 1.4;
   --monospace: var(--monospace-font); /* Fixes source code mode */
   --nav-width: 200px;
@@ -35,22 +37,24 @@
 }
 
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
-  src: url('./paradox/Nunito.ttf') format('woff2'), local('Nunito');
+  src: url("./paradox/Nunito.ttf") format("woff2"), local("Nunito");
 }
 
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 350;
-  src: url('./paradox/RobotoSlab.ttf') format('woff2'), local('Roboto Slab'), local('RobotoSlab');
+  src: url("./paradox/RobotoSlab.ttf") format("woff2"), local("Roboto Slab"),
+    local("RobotoSlab");
 }
 
 @font-face {
-  font-family: 'FiraCode';
-  src: url('./paradox/FiraCode.ttf') format('woff2'), local('Fira Code'), local('Fira-Code');
+  font-family: "FiraCode";
+  src: url("./paradox/FiraCode.ttf") format("woff2"), local("Fira Code"),
+    local("Fira-Code");
 }
 
 /* Narrow layout styles */
@@ -73,7 +77,7 @@ body {
 }
 
 #write {
-	/* size of writing area: */
+  /* size of writing area: */
   padding-left: var(--document-padding-x);
   padding-right: var(--document-padding-x);
   max-width: var(--main-content-max-width);
@@ -88,7 +92,7 @@ body {
 /* yaml */
 pre.md-meta-block {
   background-color: var(--background-color);
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   color: var(--accent-color);
   border-bottom: 2px solid var(--border-color);
   font-family: var(--monospace-font);
@@ -96,7 +100,12 @@ pre.md-meta-block {
 
 /* headings */
 /* <> */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   color: var(--header-color);
 }
@@ -117,18 +126,18 @@ h1:not(:first-child) {
 
 /* <> */
 h2 {
-  content: '';
+  content: "";
   text-align: center;
   font-size: var(--h2-fontsize);
   margin: 1.5rem 10%;
 }
 h2:after {
-  content: '';
-	/* height: 1px; */
-	width: 70%;
-	display: block;
-	margin: .2em auto 0;
-	border-bottom: 2px solid var(--primary-colour);
+  content: "";
+  /* height: 1px; */
+  width: 70%;
+  display: block;
+  margin: 0.2em auto 0;
+  border-bottom: 2px solid var(--primary-colour);
 }
 
 /* <> */
@@ -138,35 +147,34 @@ h3 {
   font-size: var(--h3-fontsize);
 }
 /* <> */
-h3 span{
+h3 span {
   padding: 0 1em;
   border-left: 2px solid var(--primary-colour);
   border-right: 2px solid var(--primary-colour);
 }
 
-h4{
+h4 {
   color: var(--header-color);
   margin-top: 1rem;
   margin-bottom: 0.4em;
-  font-size: var(--h4-fontsize );
+  font-size: var(--h4-fontsize);
 }
 /* <> */
-h4 span{
+h4 span {
   padding: 1px 0 0.1em 0;
   border-bottom: 2px dashed var(--primary-colour);
 }
 
-
-h5{
-  color: var(--header-color);  
+h5 {
+  color: var(--header-color);
   margin-top: 1rem;
   margin-bottom: 0.2em;
   font-size: var(--h5-fontsize);
 }
 
-h6{
+h6 {
   font-style: oblique;
-  color: var(--header-color);  
+  color: var(--header-color);
   margin-top: 1rem;
   margin-bottom: 0.2em;
   font-size: var(--h6-fontsize);
@@ -174,27 +182,27 @@ h6{
 
 h1 tt,
 h1 code {
-    font-size: inherit;
+  font-size: inherit;
 }
 h2 tt,
 h2 code {
-    font-size: inherit;
+  font-size: inherit;
 }
 h3 tt,
 h3 code {
-    font-size: inherit;
+  font-size: inherit;
 }
 h4 tt,
 h4 code {
-    font-size: inherit;
+  font-size: inherit;
 }
 h5 tt,
 h5 code {
-    font-size: inherit;
+  font-size: inherit;
 }
 h6 tt,
 h6 code {
-    font-size: inherit;
+  font-size: inherit;
 }
 
 /* table */
@@ -205,7 +213,7 @@ table {
 
 table tr:nth-child(2n),
 thead {
-    background-color: var(--side-bar-bg-color);
+  background-color: var(--side-bar-bg-color);
 }
 
 td,
@@ -213,7 +221,7 @@ th {
   border-style: solid;
   border-color: var(--border-color);
   border-width: 1px;
-  padding: .35rem .7rem
+  padding: 0.35rem 0.7rem;
 }
 
 li p {
@@ -287,15 +295,13 @@ input[type="checkbox"]:checked:after {
   opacity: 1;
 }
 
-
-
 blockquote {
   font-style: italic; /* <> */
   margin: 1rem 0;
   padding-left: 2ch;
-  margin-left: .5ch;
+  margin-left: 0.5ch;
   position: relative;
-  overflow: visible;   /* <> */
+  overflow: visible; /* <> */
   border-left: 4px solid var(--primary-colour);
   color: var(--accent-color);
 }
@@ -309,9 +315,10 @@ hr {
 }
 
 /* list markers */
-ol > li::marker, ul > li::marker {
-	color: var(--primary-colour);
-	font-weight: bold;
+ol > li::marker,
+ul > li::marker {
+  color: var(--primary-colour);
+  font-weight: bold;
 }
 
 p {
@@ -324,7 +331,7 @@ p {
  */
 
 .cm-s-inner .CodeMirror-gutters {
-   background: var(--code-bg-color);
+  background: var(--code-bg-color);
 }
 
 .code-tooltip {
@@ -376,8 +383,8 @@ tt {
   background-color: var(--code-bg-color);
   font-family: var(--monospace-font);
   font-size: var(--monospace-font-size);
-  border-radius: .25rem;
-  padding: 0 .125rem;
+  border-radius: 0.25rem;
+  padding: 0 0.125rem;
   line-height: var(--monospace-line-height);
 }
 
@@ -390,9 +397,8 @@ tt {
 }
 
 a {
-  color:  var(--link-color);
+  color: var(--link-color);
 }
-
 
 /**
  * Control UI (optional)
@@ -403,56 +409,114 @@ a {
 }
 
 #write div.md-toc-tooltip {
-	background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 /* CodeMirror Theme: a modified version of ir_black - https://github.com/FarhadG/code-mirror-themes/blob/master/themes/ir_black.css */
 
 .cm-s-inner {
-	font-size: 1em;
-	line-height: 1.5em;
-	font-family: var(--monospace-font);
-	letter-spacing: 0.3px;
-	word-spacing: 1px;
-	background: var(--code-bg-color) !important;
-	color: var(--codemirror-color);
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: var(--monospace-font);
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+  background: var(--code-bg-color) !important;
+  color: var(--codemirror-color);
 }
 .cm-s-inner .CodeMirror-lines {
-	padding: 0px 0;
+  padding: 0px 0;
 }
 .cm-s-inner .CodeMirror-gutters {
-	background-color: var(--code-bg-color) !important;
-	border: none;
+  background-color: var(--code-bg-color) !important;
+  border: none;
 }
-.cm-s-inner div.CodeMirror-cursor {	border-left: 3px solid var(--codemirror-color) !important;}
-.cm-s-inner .CodeMirror-selected {	background: #afafaf !important;}
-.cm-s-inner .cm-comment {	color: #575757 !important;}
-.cm-s-inner .cm-keyword {	color: #1675ce !important;}
-.cm-s-inner .cm-string {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-number {	color: #5b1d68 !important;}
-.cm-s-inner .cm-property {	color: #5b1d68 !important;}
-.cm-s-inner .cm-atom {	color: #5b1d68 !important;}
-.cm-s-inner .cm-operator {	color: #173d61 !important;}
-.cm-s-inner .CodeMirror-linenumber {	color: #7C7C7C !important;}
+.cm-s-inner div.CodeMirror-cursor {
+  border-left: 3px solid var(--codemirror-color) !important;
+}
+.cm-s-inner .CodeMirror-selected {
+  background: #afafaf !important;
+}
+.cm-s-inner .cm-comment {
+  color: #575757 !important;
+}
+.cm-s-inner .cm-keyword {
+  color: #1675ce !important;
+}
+.cm-s-inner .cm-string {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-number {
+  color: #5b1d68 !important;
+}
+.cm-s-inner .cm-property {
+  color: #5b1d68 !important;
+}
+.cm-s-inner .cm-atom {
+  color: #5b1d68 !important;
+}
+.cm-s-inner .cm-operator {
+  color: #173d61 !important;
+}
+.cm-s-inner .CodeMirror-linenumber {
+  color: #7c7c7c !important;
+}
 /* Not in original Theme... */
-.cm-s-inner .cm-def {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-punctuation {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-variable {	color: #125d5f !important;}
-.cm-s-inner .cm-variable-2 {	color: #125d5f !important;}
-.cm-s-inner .cm-variable-3 {	color: #125d5f !important;}
-.cm-s-inner .cm-meta {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-string-2 {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-qualifier {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-builtin {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-quote {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-bracket {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-tag {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-attribute {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-hr {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-link {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-plus {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-minus {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-error {	color: var(--codemirror-color) !important;}
-.cm-s-inner .cm-invalidchar {	color: var(--codemirror-color) !important;}
+.cm-s-inner .cm-def {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-punctuation {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-variable {
+  color: #125d5f !important;
+}
+.cm-s-inner .cm-variable-2 {
+  color: #125d5f !important;
+}
+.cm-s-inner .cm-variable-3 {
+  color: #125d5f !important;
+}
+.cm-s-inner .cm-meta {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-string-2 {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-qualifier {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-builtin {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-quote {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-bracket {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-tag {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-attribute {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-hr {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-link {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-plus {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-minus {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-error {
+  color: var(--codemirror-color) !important;
+}
+.cm-s-inner .cm-invalidchar {
+  color: var(--codemirror-color) !important;
+}
 
 /* End CodeMirror Theme */

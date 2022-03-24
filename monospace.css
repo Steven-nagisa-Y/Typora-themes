@@ -1,17 +1,19 @@
 @include-when-export url(https://fonts.loli.net/css?family=Inconsolata:400,700&subset=latin-ext);
 /* latin-ext */
 @font-face {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-style: normal;
   font-weight: 400;
-  src: local('Inconsolata Regular'), url(monospace/Inconsolata-Regular.ttf) format('truetype');
+  src: local("Inconsolata Regular"),
+    url(monospace/Inconsolata-Regular.ttf) format("truetype");
 }
 /* latin */
 @font-face {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-style: normal;
   font-weight: 700;
-  src: local('Inconsolata Bold'), url(monospace/Inconsolata-Bold.ttf) format('truetype');
+  src: local("Inconsolata Bold"),
+    url(monospace/Inconsolata-Bold.ttf) format("truetype");
 }
 
 :root {
@@ -28,7 +30,7 @@ html {
 
 html,
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   background: white;
 }
 
@@ -55,42 +57,42 @@ h3,
 h4,
 h5,
 h6,
-[mdlike='h1'],
-[mdlike='h2'],
-[mdlike='h3'],
-[mdlike='h4'],
-[mdlike='h5'],
-[mdlike='h6'] {
+[mdlike="h1"],
+[mdlike="h2"],
+[mdlike="h3"],
+[mdlike="h4"],
+[mdlike="h5"],
+[mdlike="h6"] {
   font-weight: bold;
   font-family: "PT Mono", monospace;
   color: #6363ac;
 }
-[mdlike='h1'] > .md-blockmeta,
-[mdlike='h2'] > .md-blockmeta,
-[mdlike='h3'] > .md-blockmeta,
-[mdlike='h4'] > .md-blockmeta,
-[mdlike='h5'] > .md-blockmeta,
-[mdlike='h6'] > .md-blockmeta {
+[mdlike="h1"] > .md-blockmeta,
+[mdlike="h2"] > .md-blockmeta,
+[mdlike="h3"] > .md-blockmeta,
+[mdlike="h4"] > .md-blockmeta,
+[mdlike="h5"] > .md-blockmeta,
+[mdlike="h6"] > .md-blockmeta {
   color: inherit;
   font-weight: inherit;
   font-style: inherit;
 }
 h1,
-[mdlike='h1'] {
+[mdlike="h1"] {
   font-size: 2rem;
 }
 h1:before {
   content: "# ";
 }
 h2,
-[mdlike='h2'] {
+[mdlike="h2"] {
   font-size: 1.6rem;
 }
 h2:before {
   content: "## ";
 }
 h3,
-[mdlike='h3'] {
+[mdlike="h3"] {
   font-size: 1.3rem;
 }
 h3:before,
@@ -100,13 +102,13 @@ h3.md-focus:before {
 h4,
 h5,
 h6,
-[mdlike='h4'],
-[mdlike='h5'],
-[mdlike='h6'] {
+[mdlike="h4"],
+[mdlike="h5"],
+[mdlike="h6"] {
   color: #0e5796;
 }
 h4,
-[mdlike='h4'] {
+[mdlike="h4"] {
   font-size: 1.2rem;
 }
 h4:before,
@@ -114,7 +116,7 @@ h4.md-focus:before {
   content: "#### ";
 }
 h5,
-[mdlike='h5'] {
+[mdlike="h5"] {
   font-size: 1.1rem;
 }
 h5:before,
@@ -122,7 +124,7 @@ h5.md-focus:before {
   content: "##### ";
 }
 h6,
-[mdlike='h6'] {
+[mdlike="h6"] {
   font-size: 1rem;
 }
 h6:before,
@@ -168,7 +170,7 @@ th {
   border-width: 0 0 0 1px;
   margin: 0;
   overflow: visible;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 .md-toc-item {
   position: relative;
@@ -204,30 +206,30 @@ a.md-toc-inner {
   width: 100%;
 }
 #write > h1,
-#write > [mdlike='h1'] {
+#write > [mdlike="h1"] {
   margin-left: -2ch;
 }
 #write > h2,
-#write > [mdlike='h2'] {
+#write > [mdlike="h2"] {
   margin-left: -3ch;
 }
 #write > h3,
-#write > [mdlike='h3'] {
+#write > [mdlike="h3"] {
   margin-left: -4ch;
 }
 #write > h4,
-#write > [mdlike='h4'] {
+#write > [mdlike="h4"] {
   margin-left: -5ch;
 }
 #write > h5,
-#write > [mdlike='h5'] {
+#write > [mdlike="h5"] {
   margin-left: -6ch;
 }
 #write > h6,
-#write > [mdlike='h6'] {
+#write > [mdlike="h6"] {
   margin-left: -7ch;
 }
-#write p{
+#write p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -237,12 +239,12 @@ a.md-toc-inner {
 #write h4,
 #write h5,
 #write h6,
-#write [mdlike='h1'],
-#write [mdlike='h2'],
-#write [mdlike='h3'],
-#write [mdlike='h4'],
-#write [mdlike='h5'],
-#write [mdlike='h6'] {
+#write [mdlike="h1"],
+#write [mdlike="h2"],
+#write [mdlike="h3"],
+#write [mdlike="h4"],
+#write [mdlike="h5"],
+#write [mdlike="h6"] {
   margin-top: 0.83em;
   margin-bottom: 0.83em;
 }
@@ -256,7 +258,7 @@ a.md-toc-inner {
     padding-right: 12ch;
   }
   #write > h6,
-  #write > p [mdlike='h6'] {
+  #write > p [mdlike="h6"] {
     margin-left: -8ch;
   }
 }
@@ -272,12 +274,12 @@ a.md-toc-inner {
   .pin-outline #write > h4,
   .pin-outline #write > h5,
   .pin-outline #write > h6,
-  .pin-outline #write > p [mdlike='h1'],
-  .pin-outline #write > p [mdlike='h2'],
-  .pin-outline #write > p [mdlike='h3'],
-  .pin-outline #write > p [mdlike='h4'],
-  .pin-outline #write > p [mdlike='h5'],
-  .pin-outline #write > p [mdlike='h6'] {
+  .pin-outline #write > p [mdlike="h1"],
+  .pin-outline #write > p [mdlike="h2"],
+  .pin-outline #write > p [mdlike="h3"],
+  .pin-outline #write > p [mdlike="h4"],
+  .pin-outline #write > p [mdlike="h5"],
+  .pin-outline #write > p [mdlike="h6"] {
     margin-left: 0;
   }
 }
@@ -297,12 +299,12 @@ a.md-toc-inner {
   #write > h4,
   #write > h5,
   #write > h6,
-  #write > [mdlike='h1'],
-  #write > [mdlike='h2'],
-  #write > [mdlike='h3'],
-  #write > [mdlike='h4'],
-  #write > [mdlike='h5'],
-  #write > [mdlike='h6'] {
+  #write > [mdlike="h1"],
+  #write > [mdlike="h2"],
+  #write > [mdlike="h3"],
+  #write > [mdlike="h4"],
+  #write > [mdlike="h5"],
+  #write > [mdlike="h6"] {
     margin-left: 0;
   }
 }
@@ -336,7 +338,7 @@ ol[cid] > li:before {
   position: absolute;
 }
 .task-list-item input:before {
-  content: '[ ]';
+  content: "[ ]";
   display: inline-block;
   margin-left: -2ch;
   width: 4ch;
@@ -348,7 +350,7 @@ ol[cid] > li:before {
   color: #438600;
 }
 .task-list-item input:checked:before {
-  content: '[x]';
+  content: "[x]";
 }
 .task-list-item input:checked ~ * {
   text-decoration: line-through;
@@ -434,52 +436,52 @@ hr:after {
   color: #e9eded;
 }
 .CodeMirror.cm-s-inner .cm-variable-2 {
-  color: #80CBC4;
+  color: #80cbc4;
 }
 .CodeMirror.cm-s-inner .cm-variable-3 {
-  color: #82B1FF;
+  color: #82b1ff;
 }
 .CodeMirror.cm-s-inner .cm-builtin {
-  color: #DECB6B;
+  color: #decb6b;
 }
 .CodeMirror.cm-s-inner .cm-atom {
-  color: #F77669;
+  color: #f77669;
 }
 .CodeMirror.cm-s-inner .cm-number {
-  color: #F77669;
+  color: #f77669;
 }
 .CodeMirror.cm-s-inner .cm-def {
   color: #e9eded;
 }
 .CodeMirror.cm-s-inner .cm-string {
-  color: #C3E88D;
+  color: #c3e88d;
 }
 .CodeMirror.cm-s-inner .cm-string-2 {
-  color: #80CBC4;
+  color: #80cbc4;
 }
 .CodeMirror.cm-s-inner .cm-comment {
-  color: #546E7A;
+  color: #546e7a;
 }
 .CodeMirror.cm-s-inner .cm-variable {
-  color: #82B1FF;
+  color: #82b1ff;
 }
 .CodeMirror.cm-s-inner .cm-tag {
-  color: #80CBC4;
+  color: #80cbc4;
 }
 .CodeMirror.cm-s-inner .cm-meta {
-  color: #80CBC4;
+  color: #80cbc4;
 }
 .CodeMirror.cm-s-inner .cm-attribute {
-  color: #FFCB6B;
+  color: #ffcb6b;
 }
 .CodeMirror.cm-s-inner .cm-property {
-  color: #80CBAE;
+  color: #80cbae;
 }
 .CodeMirror.cm-s-inner .cm-qualifier {
-  color: #DECB6B;
+  color: #decb6b;
 }
 .CodeMirror.cm-s-inner .cm-variable-3 {
-  color: #DECB6B;
+  color: #decb6b;
 }
 .CodeMirror.cm-s-inner .cm-tag {
   color: #ff5370;
@@ -490,10 +492,10 @@ hr:after {
 }
 .CodeMirror.cm-s-inner .cm-error {
   color: #ffffff;
-  background-color: #EC5F67;
+  background-color: #ec5f67;
 }
 .CodeMirror.cm-s-inner .cm-link {
-  color: #B2B2E0;
+  color: #b2b2e0;
 }
 .cm-s-inner .CodeMirror-matchingbracket {
   text-decoration: underline;
@@ -610,7 +612,7 @@ content {
   color: white;
 }
 
-.md-task-list-item>input {
+.md-task-list-item > input {
   margin-top: calc(1rem - 12px);
 }
 

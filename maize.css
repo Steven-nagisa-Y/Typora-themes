@@ -1,44 +1,49 @@
 /* Fira Code */
 @font-face {
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-style: normal;
-  src: local('Fira Code'), url('maize/FiraCode-Regular.ttf') format('ttf');
+  src: local("Fira Code"), url("maize/FiraCode-Regular.ttf") format("ttf");
 }
 
 /* 全局属性 */
-:root{
+:root {
   --select-text-bg-color: #e49123;
-  --bg-color:  #fafafa;                   /*change background*/
-  --text-color: #333333;                  /*change text color*/
-  --md-char-color: #C7C5C5;               /*change color of meta characetrs like `*` in markdown */
-  --meta-content-color: #5b808d;          /*change color of meta contents like image text or link address in markdown */
+  --bg-color: #fafafa; /*change background*/
+  --text-color: #333333; /*change text color*/
+  --md-char-color: #c7c5c5; /*change color of meta characetrs like `*` in markdown */
+  --meta-content-color: #5b808d; /*change color of meta contents like image text or link address in markdown */
 
-  --primary-color: #428bca;               /* color of primary buttons */
+  --primary-color: #428bca; /* color of primary buttons */
   --primary-btn-border-color: #285e8e;
   --primary-btn-text-color: #fff;
 
-  --window-border: 1px solid #eee;        /*border for sidebar, etc*/
+  --window-border: 1px solid #eee; /*border for sidebar, etc*/
 
-  --active-file-bg-color: #eee;           /*background color if list item in file tree or file list*/
+  --active-file-bg-color: #eee; /*background color if list item in file tree or file list*/
   --active-file-text-color: inherit;
   --active-file-border-color: #777;
 
-  --side-bar-bg-color: var(--bg-color);     /*change background of sidebar*/
-  --item-hover-bg-color: rgba(229, 229, 229, 0.59); /*background of control items when hover, like menu in sidebar*/
+  --side-bar-bg-color: var(--bg-color); /*change background of sidebar*/
+  --item-hover-bg-color: rgba(
+    229,
+    229,
+    229,
+    0.59
+  ); /*background of control items when hover, like menu in sidebar*/
   --item-hover-text-color: inherit;
-  --monospace: monospace;                   /*monospace font for codes, fences*/
+  --monospace: monospace; /*monospace font for codes, fences*/
 }
 ::selection {
-	background:#b981d1;
-	color:white
+  background: #b981d1;
+  color: white;
 }
 ::-moz-selection {
-	background:#b981d1;
-	color:white
+  background: #b981d1;
+  color: white;
 }
 ::-webkit-selection {
-	background:#b981d1;
-	color:white
+  background: #b981d1;
+  color: white;
 }
 
 #write {
@@ -46,7 +51,8 @@
   font-size: 16px;
   text-align: left;
   letter-spacing: 0px;
-  font-family: "Fira Code", "微软雅黑","PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "Fira Code", "微软雅黑", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
 }
 
 /*段落*/
@@ -73,7 +79,7 @@
 #write h4,
 #write h5,
 #write h6 {
-  margin: .72em 0;
+  margin: 0.72em 0;
   padding: 0px;
   font-weight: bold;
   color: black;
@@ -83,20 +89,20 @@
   font-size: 2rem;
   /* text-align: center; */
 }
-#write h2::before{
+#write h2::before {
   content: "✔";
   font-weight: bold;
   color: #ffb11b;
-  margin-right: 4px
+  margin-right: 4px;
 }
 #write h2 {
   font-size: 1.7rem;
   margin: 1em 0;
 }
 #write h2 span {
- font-weight: bold;
- color: #333;
- padding: 3px 10px 1px;
+  font-weight: bold;
+  color: #333;
+  padding: 3px 10px 1px;
 }
 
 #write h3 {
@@ -131,7 +137,7 @@
 }
 /* 列表内容 */
 #write li section {
-  font-size:15px;
+  font-size: 15px;
 }
 
 /* 字体加粗 */
@@ -140,7 +146,7 @@
 } */
 
 #write strong {
-  color: #E49123;
+  color: #e49123;
   font-weight: bold;
 }
 
@@ -168,8 +174,8 @@
 #write a {
   text-decoration: none;
   font-weight: bold;
-  color: #E49123;
-  border-bottom: 1px solid #E49123;
+  color: #e49123;
+  border-bottom: 1px solid #e49123;
 }
 
 /* 分割线 */
@@ -178,13 +184,18 @@
   padding: 0;
   border: none;
   text-align: center;
-  background-image: linear-gradient(to right,rgba(231, 93, 109,0.3),rgba(255, 159, 150,0.75),rgba(255, 216, 181,0.3));
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 93, 109, 0.3),
+    rgba(255, 159, 150, 0.75),
+    rgba(255, 216, 181, 0.3)
+  );
 }
 
 /* background-color 由 rgba 转为 HEX*/
-#write code{
+#write code {
   font-size: 14px;
-  color:  rgb(235, 76, 55);
+  color: rgb(235, 76, 55);
   background-color: #f0f0f0;
 }
 
@@ -206,7 +217,7 @@
   width: 85%;
   max-width: 100%;
   border-radius: 5px;
-  box-shadow:0px 4px 12px #84A1A8;
+  box-shadow: 0px 4px 12px #84a1a8;
   border: 0px;
 }
 
@@ -216,7 +227,7 @@
   background-color: white;
 }
 #write table tr:nth-child(2n) {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 #write table tr th,
 #write table tr td {
@@ -231,49 +242,48 @@
   background-color: #f0f0f0;
 }
 
-
 /* 上角标 */
 #write .md-footnote {
- font-weight: bold;
- color: #E49123;
+  font-weight: bold;
+  color: #e49123;
 }
 #write .md-footnote > .md-text:before {
- content: '['
+  content: "[";
 }
 #write .md-footnote > .md-text:after {
- content: ']'
+  content: "]";
 }
-
 
 /* 下角标 */
 #write .md-def-name {
   padding-right: 1.8ch;
 }
 #write .md-def-name:before {
-  content: '[';
+  content: "[";
   color: #000;
 }
 #write .md-def-name:after {
   color: #000;
 }
 
-
 /* 代码块主题 */
-code, .md-fences {
-	padding: .5em;
-	/* border: 1px solid #ccc; */
-	padding: .1em;
-	border-radius: 5px;
-	margin-left: 0.2em;
+code,
+.md-fences {
+  padding: 0.5em;
+  /* border: 1px solid #ccc; */
+  padding: 0.1em;
+  border-radius: 5px;
+  margin-left: 0.2em;
   margin-right: 0.2em;
-  font-family: "Fira Code", "微软雅黑","PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "Fira Code", "微软雅黑", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
 }
 .md-fences {
   margin: 0 0 20px;
   background-color: #292b35;
   color: rgb(236, 236, 236);
-	/* font-size: 1em; */
-	padding: 0.3em 1em;
+  /* font-size: 1em; */
+  padding: 0.3em 1em;
   padding-top: 0.4em;
   box-shadow: 0px 4px 9px grey;
 }
@@ -285,7 +295,7 @@ code, .md-fences {
 .cm-s-inner div.CodeMirror-selected {
   background: rgba(113, 124, 180, 0.2);
 }
-.CodeMirror-code{
+.CodeMirror-code {
   margin-left: 5px;
 }
 .cm-s-inner .cm-keyword {
@@ -351,10 +361,9 @@ code, .md-fences {
 }
 
 /*流程图样式*/
-pre[lang='sequence'],
-pre[lang='flow'],
-pre[lang='mermaid']
-{
+pre[lang="sequence"],
+pre[lang="flow"],
+pre[lang="mermaid"] {
   background: #ffffff;
   color: #333333;
 }
