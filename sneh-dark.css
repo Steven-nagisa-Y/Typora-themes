@@ -37,8 +37,12 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   font-family: "PT Sans", "-apple-system", "更纱黑体", "Microsoft Yahei",
     "Liberation Mono", monospace;
+=======
+  font-family: "PT Sans", "-apple-system", "Liberation Mono", monospace;
+>>>>>>> 477b643795a47920c13f53dc433f0c14cca969e7
   /*font-family: Geneva, Tahoma, sans-serif;*/
   color: var(--text-color);
   line-height: 2;
@@ -253,7 +257,13 @@ blockquote {
 h4,
 h5,
 h6 {
+<<<<<<< HEAD
   display: none;
+=======
+  /* display:  none; */
+  font-size: 1.1rem;
+  font-weight: bold;
+>>>>>>> 477b643795a47920c13f53dc433f0c14cca969e7
 }
 
 h4 + blockquote {
