@@ -23,6 +23,11 @@
   --active-file-bg-color: var(--red);
   --active-file-text-color: var(--bg-color);
   --item-hover-text-color: #93a1a1;
+  --font-base: Geneva, Tahoma, "PT Sans", "更纱黑体", "MiSans",
+    "Source Code Pro", "Noto Sans Mono", "PingFang SC", "Microsoft YaHei",
+    Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Roboto Mono", "SF Mono", "Jetbrains Mono", "Fira Code",
+    "Ubuntu Mono", Consolas, "Lucida Console", "Courier", "DengXian", monospace;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600");
@@ -34,9 +39,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans", "-apple-system", "更纱黑体", "Microsoft Yahei",
-    "Liberation Mono", monospace;
-  /*font-family: Geneva, Tahoma, sans-serif;*/
+  font-family: var(--font-base);
   color: var(--text-color);
   line-height: 2;
   background-color: var(--bg-color);
@@ -98,7 +101,7 @@ h3,
 [mdlike="h3"] {
   color: var(--red);
   font-weight: bold;
-  font-family: "PT Sans", monospace;
+  font-family: var(--font-mono);
 }
 [mdlike="h1"] > .md-blockmeta,
 [mdlike="h2"] > .md-blockmeta,
@@ -353,7 +356,7 @@ table tr td:last-child {
 
 code {
   color: var(--base03);
-  font-family: "SF Mono", "Fira Code", "Cascadia Mono", monospace;
+  font-family: var(--font-mono);
   font-size: 0.9rem;
 }
 .md-fences,
@@ -361,7 +364,7 @@ code,
 tt {
   background-color: var(--base3);
   color: var(--cyan);
-  font-family: "SF Mono", "Fira Code", "Cascadia Mono", monospace;
+  font-family: var(--font-mono);
   border-radius: 5px;
   padding: 2px 4px;
 }
@@ -428,11 +431,11 @@ tt {
 
 .md-image > .md-meta {
   border-radius: 3px;
-  font-family: "Roboto Mono", "Liberation Mono", Courier, monospace;
+  font-family: var(--font-mono);
   padding: 8px 16px;
   font-size: 0.9em;
   color: inherit;
-  /* background-color: ; */
+  background-color: inherit;
 }
 
 .md-tag {
@@ -473,7 +476,7 @@ header,
 .context-menu,
 .megamenu-content,
 footer {
-  font-family: "Roboto Mono", "Liberation Mono", monospace;
+  font-family: var(--font-mono);
 }
 
 .file-node-content:hover .file-node-icon,
@@ -487,7 +490,6 @@ footer {
 }
 .task-list-not-done {
   /* styles for incomplete tasks */
-  font-weight: bolder;
 }
 
 .mac-seamless-mode #typora-sidebar {
