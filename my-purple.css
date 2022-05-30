@@ -17,20 +17,21 @@
   --item-hover-bg-color: var(--shadow-color);
   --active-file-border-color: var(var(--title-color));
 
-  --base-font: "Helvetica Neue", "Noto Sans", -apple-system, Ubuntu,
+  --font-base: Helvetica, "Helvetica Neue", "Noto Sans", "MiSans",
     "Microsoft YaHei", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
     "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC",
     "Source Han Sans CN", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
-    SimHei, "WenQuanYi Zen Hei Sharp", "Source Sans Pro", sans-serif;
+    SimHei, "WenQuanYi Zen Hei Sharp", "Source Sans Pro", -apple-system, Ubuntu,
+    sans-serif;
   --title-font: "EB Garamond", Georgia, "Noto Serif", "Noto Serif CJK SC",
     "Nimbus Roman No9 L", "Songti SC", "Source Han Serif SC",
     "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
     SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
     "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
     "Ubuntu", "Source Sans Pro", serif;
-  --monospace: "Fira Code", "JetBrains Mono", "Cascadia Code", "Sarasa Term SC",
-    Monaco, "Deja Vu Sans Mono", Consolas, "Lucida Console", "Andale Mono",
-    "Roboto Mono", Courier, Monospace !important;
+  --font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", "Sarasa Term SC",
+    Monaco, "Deja Vu Sans Mono", "Ubuntu Mono", Consolas, "Lucida Console",
+    "Courier", "Andale Mono", "Roboto Mono", "DengXian", monospace !important;
 }
 
 /* 打印 */
@@ -78,7 +79,7 @@ body {
 
 /* 页边距 和 页面大小 */
 #write {
-  font-family: var(--base-font);
+  font-family: var(--font-base);
   /* max-width: 914px; */
   margin: 0 auto;
   padding: 1rem 4rem;
@@ -221,7 +222,7 @@ blockquote {
   border-left: 0.2em solid var(--purple-light);
   padding-left: 1em;
   color: var(--light-text-color);
-  font-family: var(--base-font);
+  font-family: var(--font-base);
 }
 
 /* 表格 */
@@ -261,8 +262,8 @@ thead {
 tt {
   padding: 2px 4px;
   border-radius: 0.3rem;
-  font-family: var(--monospace);
-  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 1rem;
   color: var(--code-color);
   background-color: #f4f2f9;
   margin: 0 2px;
@@ -291,8 +292,9 @@ tt {
 }
 
 #write pre.md-meta-block {
+  font-family: var(--font-mono);
   padding: 1rem;
-  font-size: 85%;
+  font-size: 1rem;
   line-height: 1.45;
   background-color: #f7f7f7;
   border: 0;
@@ -308,7 +310,7 @@ tt {
 /* 图片 */
 .md-image > .md-meta {
   border-radius: 3px;
-  font-family: var(--monospace);
+  font-family: var(--font-mono);
   padding: 2px 0 0 4px;
   font-size: 0.9em;
   color: inherit;
@@ -337,7 +339,7 @@ header,
 .context-menu,
 .megamenu-content,
 footer {
-  font-family: var(--base-font);
+  font-family: var(--font-base);
 }
 
 .file-node-content:hover .file-node-icon,

@@ -703,6 +703,7 @@ p > img:only-child {
 }
 
 .outline-label {
+  font-weight: inherit;
 }
 
 /* scrollbar */
