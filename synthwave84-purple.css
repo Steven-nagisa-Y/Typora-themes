@@ -359,11 +359,13 @@ tr {
 }
 
 .mathjax-block .md-mathblock-panel .md-rawblock-before {
+  box-shadow: none;
   padding-top: 6px;
   border-top-left-radius: 6px;
 }
 
 .mathjax-block .md-mathblock-panel .md-rawblock-after {
+  box-shadow: none;
   padding-bottom: 6px;
 }
 
@@ -398,6 +400,10 @@ tr {
 .md-htmlblock .md-htmlblock-panel .md-rawblock-input {
   padding-top: 14px;
   padding-bottom: 10px;
+}
+
+.md-diagram-panel {
+  box-shadow: none;
 }
 
 .md-htmlblock-container {
@@ -1111,20 +1117,19 @@ input[type="number"],
 input[type="search"],
 input[type="text"],
 textarea {
+  font-family: var(--font-mono);
   color: #fff;
 }
 
 .export-detail input[type="number"],
 .export-detail input[type="text"] {
+  font-family: var(--font-mono);
   background: transparent !important;
 }
 
 .export-detail,
 .export-item.active,
 .export-items-list-control {
+  font-family: var(--font-mono);
   background: transparent !important;
-}
-
-.md-plain {
-  margin: 0 5px;
 }
